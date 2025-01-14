@@ -7,7 +7,7 @@ La clase abstraca se considera ya obsoleta porque han sido reemplazadas por los 
 
 */
 entity Products {
-    key ID                 : Integer;
+    key ID                 : UUID;
         Name               : String;
         Description        : String;
         ImageUrl           : String;
