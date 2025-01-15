@@ -1,6 +1,4 @@
-using {com.dunker as dunker} from '../db/schema';
-
-service CustomerService {
+using com.dunker as dunker from '../db/schema';
 /*
     podemos poner entre corchetes los campos que queremos representar 
     de la entidad Products tal que:
@@ -14,7 +12,8 @@ service CustomerService {
     En este caso no ponemos nada y esto indica que queremos
     Representar todo el contenido
 */
-    entity Products as projection on dunker.Products;
+service CatalogService {
 
+    entity Products as projection on dunker.Products;
 
 }
